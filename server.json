@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.greenlitbooks/catalog",
+  "title": "Greenlit Books",
+  "description": "Search and browse the Greenlit Books catalog: practical books on working with AI (verification, agent reliability, guardrails, security, governance, agentic coding). Read-only, no auth.",
+  "version": "1.0.0",
+  "websiteUrl": "https://greenlitbooks.com/developers",
+  "repository": {
+    "url": "https://github.com/greenlitbooks/mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://greenlitbooks.com/api/mcp"
+    }
+  ]
+}
