@@ -2,13 +2,13 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.greenlitbooks/catalog",
   "title": "Greenlit Books",
-  "description": "Search the Greenlit Books catalog: practical books on AI verification, agents, and governance.",
-  "version": "1.0.0",
-  "websiteUrl": "https://greenlitbooks.com/developers",
+  "description": "Search the Greenlit AI books, read any chapter one free, and look up the terms they define.",
   "repository": {
     "url": "https://github.com/greenlitbooks/mcp",
     "source": "github"
   },
+  "version": "1.2.0",
+  "websiteUrl": "https://greenlitbooks.com/developers",
   "remotes": [
     {
       "type": "streamable-http",
