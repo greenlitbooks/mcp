@@ -3,7 +3,7 @@
 The [Greenlit Books](https://greenlitbooks.com) catalog as a remote MCP server: practical books on working with AI, held to one standard, every claim is something you can check. All titles are live on Amazon and free to read with Kindle Unlimited.
 
 - **Endpoint**: `https://greenlitbooks.com/api/mcp` (streamable HTTP, stateless, no auth)
-- **Registry name**: `com.greenlitbooks/catalog` (version 1.4.0)
+- **Registry name**: `com.greenlitbooks/catalog` (version 1.5.0)
 - **Docs for humans and agents**: <https://greenlitbooks.com/developers>
 - **Plain JSON API** (same data, plain GET): <https://greenlitbooks.com/api/v1> with an [OpenAPI 3.1 spec](https://greenlitbooks.com/api/v1/openapi.json)
 
@@ -11,6 +11,7 @@ The [Greenlit Books](https://greenlitbooks.com) catalog as a remote MCP server: 
 
 | Tool | What it does |
 |---|---|
+| `find_answer_in_books` | Ask a question in your own words and get the passages that answer it, from what the books publish free: chapter one of every book (by section), each book's named concept and its FAQ, the glossary, the claim ledger and the guides. Matched by words and by meaning. Each passage comes with the exact URL to quote, the finished citation, and the page to read for more; a question the free pages do not answer returns nothing. |
 | `search` | Search everything on greenlitbooks.com: safety verdicts on AI agents, MCP servers and coding tools ("is X safe"), field notes, guides and the books. Returns ids to pass to `fetch`. |
 | `fetch` | Read one page by an id from `search`: the page as markdown, with its canonical URL to cite and its dates. |
 | `search_greenlit_books` | Ranked full-text search over the catalog. Filters: `series`, `audience`, `limit`. |
