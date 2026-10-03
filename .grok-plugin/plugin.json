@@ -1,0 +1,19 @@
+{
+  "name": "greenlit-books",
+  "version": "1.0.0",
+  "description": "Look up what the Greenlit Books say about working with AI agents, with exact citations: answers from the free chapters, a glossary, a claim ledger, and safety verdicts on AI agents, MCP servers and coding tools.",
+  "author": {
+    "name": "Greenlit Books",
+    "url": "https://greenlitbooks.com"
+  },
+  "homepage": "https://greenlitbooks.com/developers",
+  "repository": "https://github.com/greenlitbooks/mcp",
+  "license": "MIT",
+  "keywords": [
+    "greenlit",
+    "greenlit books",
+    "greenlitbooks",
+    "greenlit books mcp"
+  ],
+  "logo": "assets/logo.svg"
+}

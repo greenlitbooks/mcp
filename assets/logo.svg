@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Greenlit Books: an open book with a check mark">
+  <!-- Two inks on a flat ground: mint #3DDC84 on near-black #0B0E11. The subject (scaled 1.15 about the centre) fills about two thirds of the frame, inside the circle crop, so it survives a circular crop and stays legible at 32 px. -->
+  <rect width="1024" height="1024" fill="#0B0E11"/>
+  <g transform="translate(512 512) scale(1.15) translate(-512 -512)">
+  <!-- The open book: two pages, each a straight outer edge with a curved head and foot, split by the gutter. -->
+  <g fill="#3DDC84">
+    <path d="M 218 276 C 330 280 430 320 494 380 L 494 747 C 430 700 330 676 218 676 Q 212 676 212 670 L 212 282 Q 212 276 218 276 Z"/>
+    <path d="M 806 276 C 694 280 594 320 530 380 L 530 747 C 594 700 694 676 806 676 Q 812 676 812 670 L 812 282 Q 812 276 806 276 Z"/>
+  </g>
+  <!-- The check mark in ground ink, its vertex on the gutter so the gutter reads as the stem. -->
+  <g fill="#0B0E11">
+    <rect x="-17" y="-17" width="185" height="34" rx="7" transform="translate(512 608) rotate(-135)"/>
+    <rect x="-17" y="-17" width="285" height="34" rx="7" transform="translate(512 608) rotate(-45)"/>
+  </g>
+  </g>
+</svg>
