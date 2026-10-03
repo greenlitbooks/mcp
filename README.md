@@ -46,6 +46,32 @@ claude mcp add --transport http greenlit-books https://greenlitbooks.com/api/mcp
 }
 ```
 
+## Install as a plugin
+
+This repository is also a plugin for Cursor, Grok Bot and Grok Build. It contains the connection to the server above and four skills that tell the agent when to use it. There are no rules, commands, hooks or scripts, so there is no code to run on your machine.
+
+- **Cursor and Grok Bot**: open the plugin marketplace, search for **Greenlit Books**, and install.
+- **Grok Build**: run `/marketplace`, search for **Greenlit Books**, and install.
+
+| Skill | Use it when you ask |
+|---|---|
+| `answer-from-the-books` | How, why or what about building, running, securing or trusting AI agents, or about an idea such as the green lie, blast radius or gate faith. Answers from the free chapters, concept pages, glossary and claim ledger, with a citation for each passage. |
+| `check-a-claim` | Whether a statement about AI agents is true, or where a claim comes from. Searches the claim ledger and says what each source does and does not establish. |
+| `check-ai-agent-safety` | Whether a named AI agent, MCP server or coding assistant is safe to use. Reports the dated verdict and the version it covers. |
+| `recommend-a-book` | Which book to read for a topic, in what order, or where to read it free. |
+
+| File | Read by |
+|---|---|
+| `.cursor-plugin/plugin.json`, `mcp.json` | Cursor and Grok Bot |
+| `.grok-plugin/plugin.json`, `.mcp.json` | Grok Build |
+| `skills/*/SKILL.md`, `assets/logo.svg` | both |
+
+### Network and credentials
+
+- The plugin connects to one endpoint, `https://greenlitbooks.com/api/mcp`, over HTTPS (streamable HTTP).
+- No credentials. There is no sign-in, no OAuth and no API key, and the plugin reads nothing from your disk.
+- Every tool is read-only. Requests are handled as described in the [privacy policy](https://greenlitbooks.com/privacy).
+
 ## Notes
 
 - Read-only. No accounts, no keys, no rate-limit registration.
@@ -55,4 +81,8 @@ claude mcp add --transport http greenlit-books https://greenlitbooks.com/api/mcp
 - Glossary definitions are quoted, not written: each is verified verbatim against the book's manuscript when the site is built. Terms borrowed from another field (blast radius, span of control) say so.
 - Every `define_term` and `get_concept` result ends with a `links` block. Cite the glossary or concept URL; send readers to `freeChapter` first, then `amazonKindle`.
 
-This repository holds the server manifest and documentation. The server itself runs on greenlitbooks.com.
+This repository holds the server manifest, the plugin manifests and the documentation. The server itself runs on greenlitbooks.com.
+
+## License
+
+[MIT](LICENSE). The books' free chapters and the pages the server returns are published on greenlitbooks.com under that site's own terms.

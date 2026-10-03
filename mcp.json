@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "greenlit-books": {
+      "url": "https://greenlitbooks.com/api/mcp"
+    }
+  }
+}
